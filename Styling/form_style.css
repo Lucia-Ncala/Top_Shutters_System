@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 body{
     box-sizing: border-box;
     min-height: 100vh;
@@ -17,7 +16,6 @@ body{
 html{
 	scroll-behavior: smooth;
 }
-
 #hero{
 	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../Images/1.JPG);
 	min-height: 60vh;
@@ -41,7 +39,6 @@ html{
     padding: 10px 20px;
     box-shadow: none;
 }
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -53,78 +50,46 @@ html{
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
-
 #header.scrolled .nav-list ul li a{
     color: #00093c; 
 }
-
-
 .brand {
     display: flex;
     align-items: center;
 }
-
 .header-logo {
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
-
 .company-name {
     font-family: "Times New Roman", serif;
     font-size: 20px;
     font-weight: bold;
 	color: white;
 }
-
 #header.scrolled .company-name {
     color: #00093c;
 }
-/*
 .nav-bar {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    width: 100%; 
     padding-left: 0;
 }
-
 .nav-list {
-    margin-left: 700px; 
-}
-.nav-list ul {
-    justify-content: flex-start;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}*/
-/* Navigation Bar Styling */
-.nav-bar {
-    display: flex;
-    justify-content: space-between; /* This will push items to opposite ends */
-    align-items: center; 
-    width: 100%; /* Ensure it takes full width */
-    padding-left: 0;
-}
-
-.nav-list {
-    /* Remove the margin-left: 700px */
     margin-left: 0; 
 }
-
 .nav-list ul {
-    /* Remove justify-content: flex-start */
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
-
 #header .nav-list ul li{
 	display: inline-block;
 }
-
 .nav-list ul li a {
     color: #fff;
     padding: 5px 10px;
@@ -142,7 +107,6 @@ html{
 .icon-spacing {
     margin-right: 5px;
 }
-/*Header section ends*/
 
 /****************Form section******************/
 .container {
@@ -155,8 +119,6 @@ html{
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-
-
 .container header{
     position: relative;
     font-size: 20px;
@@ -182,7 +144,6 @@ html{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
 }
-
 .container form{
     position: relative;
     margin-top: 10px;
@@ -194,7 +155,6 @@ html{
     background-color: #fff;
     transition: 0.3s ease;
 }
-
 .container form .title{
     display: block;
     margin-bottom: 15px;
@@ -279,7 +239,6 @@ form .buttons{
 form .buttons button , .clearBtn{
     margin-right: 14px;
 }
-
 .col h3{
 	width: fit-content;
 	margin-top: 20px;
@@ -291,11 +250,9 @@ form .buttons button , .clearBtn{
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .social-icons a:hover {
     color: #4a90e2;
 }
-
 footer .col p i {
     margin-right: 10px;
     color: #4a90e2;
@@ -309,14 +266,12 @@ footer .col p i {
 	top: 20px;
 	left: 0;
 }
-
 hr{
 	width: 90%;
 	border:0;
 	border-bottom: 1px solid #ccc;
 	margin: 0px auto;
 }
-
 .copyright{
 	text-align: center;
     font-size: 11px;
@@ -326,61 +281,45 @@ hr{
     body {
         font-size: 14px;
     }
-    
     .input-field label {
         font-size: 12px;
     }
 }
 
-/* For tablets and smaller screens */
 @media (max-width: 992px) {
     .container {
         padding: 20px;
         margin: 10px auto;
     }
-    
     form .fields .input-field {
-        width: calc(50% - 15px); /* Two fields per row */
+        width: calc(50% - 15px);
     }
     .nav-list {
         margin-left: 0;
     }
-    
     .brand {
         flex-direction: column;
         align-items: flex-start;
     }
-    
     .company-name {
         font-size: 16px;
         margin-top: 5px;
     }
-
 }
-
-/* For mobile devices */
 @media (max-width: 768px) {
-
     #header .nav-list ul {
-        flex-direction: row; /* Keep links in a row */
+        flex-direction: row; 
     }
-
-    /*#header .nav-list ul li {
-        margin: 0 0 0 170px; 
-        font-size: 12px;
-    }*/
-
     #header .nav-list ul li {
-        margin: 0; /* Remove the left margin */
+        margin: 0;
     }
     #header .nav-list ul li a {
         font-size: 13px;
         padding: 5px;
     }
     #header .nav-bar {
-        flex-wrap: nowrap; /* Prevent wrapping */
+        flex-wrap: nowrap; 
     }
-
     #header .nav-list {
         margin-left: auto;
         white-space: nowrap;
@@ -388,40 +327,29 @@ hr{
     .container {
         padding: 15px;
     }
-    
     .container form .title {
         font-size: 13px;
         margin-bottom: 12px;
     }
-
     form .fields .input-field {
-        width: 90%; /* Stack fields vertically */
+        width: 90%; 
         margin-top: -5px;   
     }
     .input-field input,
     .input-field select {
         height: 30px;
         font-size: 13px;
-    }
-    
+    }  
 }
 
-/* For very small screens */
 @media (max-width: 480px) {
      .brand {
         flex-direction: row;
         align-items: center;
     }
-    /*#header .nav-list ul li {
-        margin: 0 0 0 auto; /* Only left margin 
-    }
     .nav-list ul li {
-        margin-left: 10px;
-    }*/
-    .nav-list ul li {
-        margin-left: 0; /* Remove the left margin */
+        margin-left: 0;
     }
-    
     .nav-list ul li a {
         font-size: 12px;
     }
@@ -429,38 +357,32 @@ hr{
         width: 30px;
         height: 30px;
     }
-
     .company-name {
         font-size: 12px;
         margin-left: 5px;
     }
-
-    /* Form adjustments */
     .input-field input,
     .input-field select {
         height: 30px;
         font-size: 13px;
     }
-    
     .container header {
         font-size: 18px;
     }
-    
     .container form .title {
         font-size: 13px;
         margin-bottom: 12px;
     }
-    
     .buttons {
         flex-direction: column;
     }
-    
     button, .clearBtn {
         width: 100%;
         max-width: none;
         margin: 10px 0;
     }
 }
+
 /* Footer base styles */
 footer {
     width: 100%;
@@ -470,7 +392,6 @@ footer {
     font-size: 13px;
     line-height: 20px;
 }
-
 .row3 {
     width: 100%;
     max-width: 1200px;
@@ -480,7 +401,6 @@ footer {
     justify-content: space-between;
     padding: 0 20px;
 }
-
 .col {
     flex: 1;
     min-width: 200px;
@@ -494,7 +414,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
 }
-
 .logo {
     width: 120px;
     height: auto;
@@ -507,7 +426,6 @@ footer {
     display: flex;
     align-items: center;
 }
-
 .col p i {
     margin-right: 10px;
     min-width: 20px;
@@ -521,38 +439,32 @@ footer {
     margin-top: 15px;
 }
 
-/* Tablets (768px - 992px) */
+
 @media (max-width: 992px) {
     .col {
         flex: 0 0 50%;
         margin-bottom: 20px;
     }
-    
     .logo {
         width: 100px;
     }
 }
 
-/* Large phones (576px - 768px) */
 @media (max-width: 768px) {
     footer {
         padding: 25px 0 10px;
-    }
-    
+    }  
     .col {
         flex: 0 0 100%;
         text-align: center;
         padding: 10px 0;
     }
-    
     .col:first-child {
         align-items: center;
     }
-    
     .social-icons {
         justify-content: center;
     }
-    
     .underline {
         left: 50%;
         transform: translateX(-50%);
@@ -560,12 +472,10 @@ footer {
     }
 }
 
-/* Small phones (under 576px) */
 @media (max-width: 576px) {
     footer {
         font-size: 12px;
-    }
-    
+    }    
     .logo {
         width: 80px;
     }
@@ -575,19 +485,15 @@ footer {
     .col h3 {
         font-size: 13px;
     }
-    
     .col p {
         font-size: 11px;
     }
-    
     .social-icons a {
         font-size: 18px;
     }
-    
     .copyright {
         font-size: 11px;
     }
-
     hr{
         margin-top: 15px;
     }
