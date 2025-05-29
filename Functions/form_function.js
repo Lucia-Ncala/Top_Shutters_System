@@ -10,4 +10,23 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// Form the changing of forms per user input
+const formSelector = document.getElementById("form-selector");
+if (formSelector) {
+    formSelector.addEventListener("change", function () {
+        const selectedValue = this.value;
+
+        // Hide all forms initially
+        document.querySelector(".form-second").style.display = "none";
+        document.querySelector(".form-third").style.display = "none";
+
+        // Show the selected form
+        if (selectedValue === "form-second") {
+            document.querySelector(".form-second").style.display = "block";
+        } else if (selectedValue === "form-third") {
+            document.querySelector(".form-third").style.display = "block";
+        }
+    });
+}
+
 });
