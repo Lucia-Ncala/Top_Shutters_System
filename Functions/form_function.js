@@ -103,4 +103,14 @@ function updateFirearmTotal() {
     document.getElementById("firearm-total").value = `R ${total}`;
     }
 });
+
+// Better touch support for form elements
+document.addEventListener('DOMContentLoaded', function() {
+    const selects = document.querySelectorAll('select');
+    selects.forEach(select => {
+        select.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            this.focus();
+        }, {passive: false});
+    });
 });
