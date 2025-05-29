@@ -29,4 +29,40 @@ if (formSelector) {
     });
 }
 
+// This is for the Grades Certificates
+const gradeSelector = document.getElementById("grade-selector");
+if (gradeSelector) {
+    gradeSelector.addEventListener("change", function () {   
+        const selectedValue = this.value;
+        const priceInput = document.getElementById("grade-price");
+                    
+        if (priceInput) {
+            priceInput.value = selectedValue ? `R ${selectedValue}` : "";
+       }
+    updateGradeTotal();
+    });
+}
+            
+// This is for the Grade additional Benefits
+const gradeBenefitSelector = document.getElementById("grade-benefit-selector");
+if (gradeBenefitSelector) {
+    gradeBenefitSelector.addEventListener("change", function () {
+        const selectedValue = this.value;
+        const priceInput = document.getElementById("grade-benefit-price");
+                    
+        if (priceInput) {
+            priceInput.value = selectedValue ? `R ${selectedValue}` : "";
+       }
+    updateGradeTotal();
+    });
+}
+            
+// Calculate total for Grade form
+function updateGradeTotal() {
+    const gradePrice = document.getElementById("grade-price").value.replace("R ", "") || 0;
+    const benefitPrice = document.getElementById("grade-benefit-price").value.replace("R ", "") || 0;
+    const total = parseInt(gradePrice) + parseInt(benefitPrice);
+                
+    document.getElementById("grade-total").value = `R ${total}`;
+}
 });
