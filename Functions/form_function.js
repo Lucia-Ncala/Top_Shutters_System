@@ -65,4 +65,42 @@ function updateGradeTotal() {
                 
     document.getElementById("grade-total").value = `R ${total}`;
 }
+
+// This is for the Firearm Certificates
+const firearmSelector = document.getElementById("firearm-selector");
+if (firearmSelector) {
+    firearmSelector.addEventListener("change", function () {
+        const selectedValue = this.value;
+        const priceInput = document.getElementById("firearm-price");
+                    
+        if (priceInput) {
+            priceInput.value = selectedValue ? `R ${selectedValue}` : "";
+        }
+        updateFirearmTotal();
+    });
+}
+            
+// This is for the Firearm additional Benefits
+const firearmBenefitSelector = document.getElementById("firearm-benefit-selector");
+if (firearmBenefitSelector) {
+    firearmBenefitSelector.addEventListener("change", function () {
+    const selectedValue = this.value;
+    const priceInput = document.getElementById("firearm-benefit-price");
+                    
+    if (priceInput) {
+        priceInput.value = selectedValue ? `R ${selectedValue}` : "";
+    }
+    updateFirearmTotal();
+    });
+}
+            
+// Calculate total for Firearm form
+function updateFirearmTotal() {
+    const firearmPrice = document.getElementById("firearm-price").value.replace("R ", "") || 0;
+    const benefitPrice = document.getElementById("firearm-benefit-price").value.replace("R ", "") || 0;
+    const total = parseInt(firearmPrice) + parseInt(benefitPrice);
+                
+    document.getElementById("firearm-total").value = `R ${total}`;
+    }
+});
 });
