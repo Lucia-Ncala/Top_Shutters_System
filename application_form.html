@@ -27,6 +27,309 @@
 	</div> 
 
     <br>
+
+    <!--Form-->
+    <div class="container">
+        <header>Registration</header>
+        <div class="form-container">
+		    <form action="form_handler.php">
+                <div class="form-first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+                        <p style="font-style: italic; font-size: 11px;">Required information is marked with an <span style="color: red; font-weight: bolder;"> *</span> asteric</p>
+                        <br>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Name(s) (as on your ID)<span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="text" name="names" placeholder="Enter Name(s)" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Surname <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="text" name="surname" placeholder="Enter Surname" required>
+                            </div>
+
+                                <div class="input-field">
+                                <label>Date of Birth <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="date" name="date_of_birth" placeholder="Enter Birth Date" required>
+                            </div>
+        
+                            <div class="input-field">
+                                <label>ID Number <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="number" name="id_number" placeholder="Enter ID Number" required>
+                            </div> 
+                            
+                            <div class="input-field">
+                                <label>Gender <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <select name="gender" required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                                
+                            <div class="input-field">
+                                <label>Email Address <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="text" name="email_address" placeholder="Enter Email Address" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Mobile Number <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="number" name="cellnumber" placeholder="Enter Mobile Number" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Alternative Mobile Number <span style="font-style: italic;"> *optional* </span></label>
+                                <input type="number" name="alternative_cellnumber" placeholder="Enter Mobile number">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Physical Address <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="text" name="physical_address" placeholder="Enter your Physical Address" required>
+                            </div>
+                        </div>
+                    </div>      
+        
+                    <br>
+                    <div class="details work">
+                        <span class="title">Experience Details</span>
     
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Employment Status <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <select name="Emp_Status" required>
+                                    <option disabled selected>Select Status</option>
+                                    <option>Employed</option>
+                                    <option>Self-Employed</option>
+                                    <option>Not Employed</option>
+                                    <option>Retired</option>
+                                    <option>Studying</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Occupation <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="text" name="Occupation" placeholder="Enter your Occupation" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Years of Experience in Security <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="number" name="Years_of_exp" placeholder="Years" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Highest Grade Passed <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <select name="Highest_Grade" required>
+                                    <option disabled selected>Select Grade</option>
+                                    <option>Grade 12 (Standard 10)</option>
+                                    <option>Grade 10</option>
+                                    <option>TVET</option>
+                                    <option>Some College</option>
+                                    <option>NQF level 5 and higher</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="form-selector">Application for: <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <select id="form-selector" name="Course" required>
+                                    <option disabled selected>Select Certificate</option>
+                                    <option value="form-second">FireArm Certificate</option>
+                                    <option value="form-third">Security Grades</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="details kin">
+                        <span class="title">Next of Kin Details</span>
+        
+                        <div class="fields">
+                            <div class="input-field">
+                            <label>Name(s) (as on their ID)</label>
+                            <input type="text" name="Kin_Names" placeholder="Enter Name(s)">
+                        </div>
+
+                        <div class="input-field">
+                           <label>Surname</label>
+                            <input type="text" name="Kin_Surname" placeholder="Enter Surname">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="Kin_Date_of_Birth" placeholder="Enter Birth Date">
+                        </div>
+        
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" name="Kin_ID_Number" placeholder="Enter ID Number">
+                        </div> 
+                            
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="Kin_Gender">
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                                
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="text" name="Kin_Email_Address" placeholder="Enter Email Address">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="Kin_CellNumber" placeholder="Enter Mobile Number">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Physical Address</label>
+                            <input type="text" name="Kin_Physical_address" placeholder="Enter Physical Address">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Their relationship to you</label>
+                            <select name="Relationship">
+                                <option disabled selected>Select Relationship</option>
+                                <option>Parent</option>
+                                <option>Spouse</option>
+                                <option>Aunt</option>
+                                <option>Uncle</option>
+                                <option>Sibling</option>
+                                <option>Guardian</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <br>
+            <!-- FireArm Application Form -->
+            <div class="form-second" style="display: none;">
+                <div class="details firearm">
+                    <span class="title">FireArm Application</span>
+        
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>FireArm Type <span style="color: red; font-weight: bolder;"> *</span></label>
+                            <select id="firearm-selector" name="course-type" required>
+                                <option disabled selected>Select FireArm Type</option>
+                                <option value="1900">Handgun for Private Use</option> <!--1900.00-->
+                                <option value="1700">Handgun for Private Purpose</option> <!--1 700.00-->
+                                <option value="1600">Rifle for Business Purpose</option> <!--1 600.00-->
+                                <option value="1500">Shortgun for Business Purpose</option> <!--1 500.00-->
+                                <option value="1800">Each Unit Standard</option> <!--1 800.00-->
+                                <option value="3690">COMBO Handgun & Shortgun</option> <!--3690.00-->
+                                <option value="3830">COMBO Handgun & Rifle</option> <!--3830.00-->
+                                <option value="5720">COMBO Handgun, Rifle & Shortgun</option> <!--5720.00-->
+                                <option value="4050">COMBO 3 FireArms Basic(only)</option> <!--4050.00-->
+                                <option value="4320">COMBO 3 FireArms Business Purpose(only)</option> <!--4320.00-->
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Price (R)</label>
+                            <input id="firearm-price" name="course_price" style="background-color: rgb(83, 81, 81); color: white;" type="text" placeholder="Price will appear here" readonly>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Additional Benefit</label>
+                                <select id="firearm-benefit-selector" name="course_benefit">
+                                    <option disabled selected>Select Benefit</option>
+                                    <option value="100">PSIRA Renewal</option>  <!--100.00-->
+                                    <option value="300">PSIRA Registration</option>  <!--300.00-->
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Price (R)</label>
+                                <input id="firearm-benefit-price" name="course_benefit_price" style="background-color: rgb(83, 81, 81); color: white;" type="text" placeholder="Price will appear here" readonly>
+                            </div>
+        
+                            <div class="input-field">
+                                <label>Overall Total (R)</label>
+                                <!--<input name="total" style="background-color: #265df2; color: white;" type="text" placeholder="Total" readonly>-->
+                                <input id="firearm-total" name="total" style="background-color: #1a2a6c; color: white;" type="text" placeholder="Total" readonly>
+                            </div>
+                        </div>
+        
+                        <div class="buttons">
+                            <div class="clearBtn">
+                                <i class="fa-solid fa-eraser"></i>
+                                <span class="btnText">Reset</span>
+                            </div>
+                                
+                            <button class="sumbit">
+                                <i class="fas fa-arrow-right icon-spacing"></i>
+                                <span class="btnText">Submit</span>
+                            </button>
+                        </div>
+                    </div> 
+            </div>
+
+                <!-- Security Grades Application Form -->
+            <div class="form-third" style="display: none;">
+                    <div class="details grades">
+                        <span class="title">Grades Application</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Grade Certificate Type <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <select id="grade-selector" name="course" required>
+                                    <option disabled selected>Select Grades</option>
+                                    <option value="900">Grade B</option> <!--900.00-->
+                                    <option value="700">Grade C</option> <!--700.00-->
+                                    <option value="600">Grade D</option> <!--600.00-->
+                                    <option value="500">Grade E</option> <!--500.00-->
+                                    <option value="1800">Grades C, D & E</option> <!--1800.00-->
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Certificate Price (R)</label>
+                                <input id="grade-price" name="course-price" style="background-color: rgb(83, 81, 81); color: white;" type="text" placeholder="Price will appear here" readonly>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Additional Benefit</label>
+                                <select id="grade-benefit-selector" name="course-benefit-price">
+                                    <option disabled selected>Select Benefit</option>
+                                    <option value="100">PSIRA Renewal</option> <!--100.00-->
+                                    <option value="300">PSIRA Registration</option> <!--300.00-->
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Additonal Price (R)</label>
+                                <input id="grade-benefit-price" name="course-benefit-price" style="background-color: rgb(83, 81, 81); color: white;" type="text" placeholder="Price will appear here" readonly>
+                            </div>
+                              
+                            <div class="input-field">
+                                <label>Overall Total (R)</label>
+                                <!--<input style="background-color: #265df2; color: white;" type="text" placeholder="Total" required>-->
+                                <input id="grade-total" style="background-color: #1a2a6c; color: white;" type="text" placeholder="Total" readonly>
+                            </div>
+                        </div>
+    
+                        <div class="buttons">
+                            <div class="clearBtn">
+                                <i class="fa-solid fa-eraser"></i>
+                                <span class="btnText">Reset</span>
+                            </div>
+                                
+                            <button class="sumbit">
+                                <i class="fas fa-arrow-right icon-spacing"></i>
+                                <span class="btnText">Submit</span>
+                            </button>
+                        </div>
+                  </div>
+            </div> 
+            </form>
+        </div>
+    </div>
 </body>
 </html>
