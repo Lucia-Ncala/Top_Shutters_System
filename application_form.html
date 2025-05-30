@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Shutters Security Services | Apply </title>
 	<link rel="stylesheet" href="Styling/form_style.css">
 </head>
@@ -24,6 +23,9 @@
                 </div>
 			</div>
 		</section>
+
+        <section id="hero" >		
+		</section>
 	</div> 
 
     <br>
@@ -41,13 +43,13 @@
 
                         <div class="fields">
                             <div class="input-field">
-                                <label>Name(s) (as on your ID)<span style="color: red; font-weight: bolder;"> *</span></label>
+                                <label>Name(s)<span style="color: red; font-weight: bolder;"> *</span></label>
                                 <input type="text" name="names" placeholder="Enter Name(s)" required>
                             </div>
 
                             <div class="input-field">
-                                <label>Surname <span style="color: red; font-weight: bolder;"> *</span></label>
-                                <input type="text" name="surname" placeholder="Enter Surname" required>
+                                <label>Last Name <span style="color: red; font-weight: bolder;"> *</span></label>
+                                <input type="text" name="surname" placeholder="Enter Last Name" required>
                             </div>
 
                                 <div class="input-field">
@@ -143,17 +145,17 @@
 
                     <br>
                     <div class="details kin">
-                        <span class="title">Next of Kin Details</span>
+                        <span class="title">Emergency Contact's Details</span>
         
                         <div class="fields">
                             <div class="input-field">
-                            <label>Name(s) (as on their ID)</label>
+                            <label>Name(s)</label>
                             <input type="text" name="Kin_Names" placeholder="Enter Name(s)">
                         </div>
 
                         <div class="input-field">
-                           <label>Surname</label>
-                            <input type="text" name="Kin_Surname" placeholder="Enter Surname">
+                           <label>Last Name</label>
+                            <input type="text" name="Kin_Surname" placeholder="Enter Last Name">
                         </div>
 
                         <div class="input-field">
@@ -218,16 +220,16 @@
                             <label>FireArm Type <span style="color: red; font-weight: bolder;"> *</span></label>
                             <select id="firearm-selector" name="course-type" required>
                                 <option disabled selected>Select FireArm Type</option>
-                                <option value="1900">Handgun for Private Use</option> <!--1900.00-->
-                                <option value="1700">Handgun for Private Purpose</option> <!--1 700.00-->
-                                <option value="1600">Rifle for Business Purpose</option> <!--1 600.00-->
-                                <option value="1500">Shortgun for Business Purpose</option> <!--1 500.00-->
-                                <option value="1800">Each Unit Standard</option> <!--1 800.00-->
-                                <option value="3690">COMBO Handgun & Shortgun</option> <!--3690.00-->
-                                <option value="3830">COMBO Handgun & Rifle</option> <!--3830.00-->
-                                <option value="5720">COMBO Handgun, Rifle & Shortgun</option> <!--5720.00-->
-                                <option value="4050">COMBO 3 FireArms Basic(only)</option> <!--4050.00-->
-                                <option value="4320">COMBO 3 FireArms Business Purpose(only)</option> <!--4320.00-->
+                                <option value="1900">Handgun for Private Use</option> 
+                                <option value="1700">Handgun for Private Purpose</option> 
+                                <option value="1600">Rifle for Business Purpose</option> 
+                                <option value="1500">Shortgun for Business Purpose</option>
+                                <option value="1800">Each Unit Standard</option> 
+                                <option value="3690">COMBO Handgun & Shortgun</option> 
+                                <option value="3830">COMBO Handgun & Rifle</option> 
+                                <option value="5720">COMBO Handgun, Rifle & Shortgun</option> 
+                                <option value="4050">COMBO 3 FireArms Basic(only)</option> 
+                                <option value="4320">COMBO 3 FireArms Business Purpose(only)</option> 
                             </select>
                         </div>
 
@@ -240,8 +242,8 @@
                             <label>Additional Benefit</label>
                                 <select id="firearm-benefit-selector" name="course_benefit">
                                     <option disabled selected>Select Benefit</option>
-                                    <option value="100">PSIRA Renewal</option>  <!--100.00-->
-                                    <option value="300">PSIRA Registration</option>  <!--300.00-->
+                                    <option value="100">PSIRA Renewal</option>  
+                                    <option value="300">PSIRA Registration</option>  
                                 </select>
                             </div>
 
@@ -252,7 +254,6 @@
         
                             <div class="input-field">
                                 <label>Overall Total (R)</label>
-                                <!--<input name="total" style="background-color: #265df2; color: white;" type="text" placeholder="Total" readonly>-->
                                 <input id="firearm-total" name="total" style="background-color: #1a2a6c; color: white;" type="text" placeholder="Total" readonly>
                             </div>
                         </div>
@@ -281,11 +282,11 @@
                                 <label>Grade Certificate Type <span style="color: red; font-weight: bolder;"> *</span></label>
                                 <select id="grade-selector" name="course" required>
                                     <option disabled selected>Select Grades</option>
-                                    <option value="900">Grade B</option> <!--900.00-->
-                                    <option value="700">Grade C</option> <!--700.00-->
-                                    <option value="600">Grade D</option> <!--600.00-->
-                                    <option value="500">Grade E</option> <!--500.00-->
-                                    <option value="1800">Grades C, D & E</option> <!--1800.00-->
+                                    <option value="900">Grade B</option> 
+                                    <option value="700">Grade C</option> 
+                                    <option value="600">Grade D</option>
+                                    <option value="500">Grade E</option> 
+                                    <option value="1800">Grades C, D & E</option> 
                                 </select>
                             </div>
 
@@ -298,8 +299,8 @@
                                 <label>Additional Benefit</label>
                                 <select id="grade-benefit-selector" name="course-benefit-price">
                                     <option disabled selected>Select Benefit</option>
-                                    <option value="100">PSIRA Renewal</option> <!--100.00-->
-                                    <option value="300">PSIRA Registration</option> <!--300.00-->
+                                    <option value="100">PSIRA Renewal</option> 
+                                    <option value="300">PSIRA Registration</option> 
                                 </select>
                             </div>
 
@@ -310,7 +311,6 @@
                               
                             <div class="input-field">
                                 <label>Overall Total (R)</label>
-                                <!--<input style="background-color: #265df2; color: white;" type="text" placeholder="Total" required>-->
                                 <input id="grade-total" style="background-color: #1a2a6c; color: white;" type="text" placeholder="Total" readonly>
                             </div>
                         </div>
