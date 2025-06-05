@@ -1,3 +1,217 @@
+/****************FAQ section styling*******************/
+.faq-container{
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(../Images/8.JPG);
+	min-height: 40vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+}
+.faq-container .detail-item{
+	background-color:transparent; 
+	height:380px; 
+	margin-top: 110px;
+}
+.accordion {
+    width: 850px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.accordion-item{
+    background: linear-gradient(to right, #00093c, #1d1a1a);
+    content: #f4f4f4;
+    margin: 0.2rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header{
+    padding: 0rem 3rem 0.5rem 1rem;
+	color: #ccc;
+    min-height: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.accordion-item-header::after{
+    content: "\002B";
+    font-size: 1rem;
+    position: absolute;
+    right: 1rem;
+	color: #4a90e2;
+}
+.accordion-item-header.active::after{
+    content: "\2212";
+}
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+	color: #ccc;
+    transition: max-height 0.2s ease-out;
+    padding: 0 1rem; 
+    text-align: left; 
+}
+.accordion-body-content p {
+    padding: 0.5rem 0; 
+    font-size: 16px;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, rgb(18, 1, 95), transparent) 1;
+    margin-bottom: 8px;
+    text-align: left; 
+}
+.faq-container .detail-item:hover {
+    box-shadow: none !important;
+    transform: none !important;
+}
+.accordion-body-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.accordion-body-content li {
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .accordion-body-content ul {
+        padding-left: 15px;
+    }
+    
+    .accordion-body-content li {
+        margin-bottom: 2px;
+		font-size: 13px;
+    }
+	.accordion-item-header {
+		font-size: 13px;
+        padding: 0.5rem 1.5rem 0.5rem 1rem;
+    }
+    
+    .accordion-body-content p {
+        font-size: 13px;
+        padding: 0.3rem 0;
+    }
+    .company-name {
+        font-size: 16px;
+    }
+    
+    .header-logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .hamburger {
+        width: 25px;
+        height: 20px;
+    }
+    .nav-list ul {
+        width: 80%;
+    }
+}
+/****************Footer/Contact section styling********/
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #00093c, #1d1a1a);
+    color: #fff;
+    padding: 30px 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.col {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.col p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.col p i {
+    margin-right: 10px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.col h3{
+	width: fit-content;
+	margin-top: 20px;
+	position: relative;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4a90e2;
+}
+
+footer .col p i {
+    margin-right: 10px;
+    color: #4a90e2;
+}
+.underline{
+	width: 100%;
+	height: 3px;
+	background: #4a90e2;
+	border-radius: 3px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+hr{
+	width: 90%;
+	border:0;
+	border-bottom: 1px solid #ccc;
+	margin: 0px auto;
+}
+
+.copyright{
+	text-align: center;
+	font-size: 11px;
+}
+
 @media (max-width: 992px) {
     .faq-container {
         min-height: 50vh;
