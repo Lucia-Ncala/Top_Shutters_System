@@ -1,4 +1,68 @@
-/* Large phones (576px - 768px) */
+@media (max-width: 992px) {
+    .faq-container {
+        min-height: 50vh;
+    }
+    
+	.accordion-body-content p {
+        font-size: 15px;
+    }
+
+	.accordion-body-content li {
+        font-size: 15px;
+    }
+
+    .accordion {
+        width: 90%;
+    }
+	.accordion-item-header {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        min-height: 60vh;
+    }
+    .accordion {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .accordion-item-header {
+		font-size: 14px;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+    }
+    
+    .accordion-body-content p {
+        padding: 0.5rem 0;
+        font-size: 14px;
+    }
+
+	.accordion-body-content li {
+        padding: 0.5rem 0;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .faq-container {
+        min-height: 70vh;
+    }
+    
+    .accordion-item-header {
+        font-size: 13px;
+    }
+    
+    .accordion-body-content p {
+        font-size: 13px;
+ 	}
+  	.accordion-body-content li {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 768px) {
 	/****FAQ section***/
 	.faq-container {
