@@ -1,3 +1,29 @@
+/****************About Us section styling**************/
+
+@media (max-width: 992px) {
+    .detail .row1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .detail .row1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .detail-item {
+        padding: 20px;
+    }
+    
+    .detail-item h2 {
+        font-size: 1.3rem;
+    }
+    
+    .detail-item p {
+        font-size: 14px;
+    }
+}
+
 /****************Services section styling**************/
 
 	.details .row{
