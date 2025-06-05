@@ -1,0 +1,78 @@
+	/* Small phones (under 576px) */
+@media (max-width: 576px) {
+	/****FAQ section***/
+	.faq-container {
+        min-height: 30vh;
+        padding: 5px 0;
+    }
+    .accordion {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .faq-container .detail-item {
+        height: auto;
+        margin-top: 10px;
+        width: 100%;
+        padding: 0 2px;
+    }
+    .accordion-item-header {
+        font-size: 13px;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+	.faq-container .detail-item h2{
+        font-size: 15px;
+    }
+    .accordion-body-content p {
+        font-size: 13px;
+    }
+
+	.accordion-body-content li {
+        font-size: 13px;
+    }
+
+/****footer*****/
+    footer {
+        font-size: 12px;
+    }
+    
+    .logo {
+        width: 80px;
+    }
+    .col{
+        margin-bottom: -15px;
+    }
+    .col h3 {
+        font-size: 12px;
+    }
+    
+    .col p {
+        font-size: 12px;
+    }
+    
+    .social-icons a {
+        font-size: 18px;
+    }
+    
+    .copyright {
+        font-size: 11px;
+    }
+
+    hr{
+        margin-top: 15px;
+    }
+}
+
+/* For very small phones */
+@media (max-width: 360px) {
+    .accordion-body-content p {
+        font-size: 12px;
+    }
+	.accordion-body-content li{
+        font-size: 12px;
+    }
+	.accordion-item-header {
+        font-size: 12px;
+    }
+
+}
