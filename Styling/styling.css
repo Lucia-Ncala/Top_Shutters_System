@@ -1132,7 +1132,6 @@ hr{
     }
 }
 
-/* Large phones (576px - 768px) */
 @media (max-width: 768px) {
 	/****FAQ section***/
 	.faq-container {
@@ -1188,7 +1187,6 @@ hr{
     }
 }
 
-/* Small phones (under 576px) */
 @media (max-width: 576px) {
 	/****FAQ section***/
 	.faq-container {
@@ -1221,7 +1219,7 @@ hr{
         font-size: 13px;
     }
 
-	/****footer*****/
+/****footer*****/
     footer {
         font-size: 12px;
     }
@@ -1266,5 +1264,3 @@ hr{
     }
 
 }
-
-
