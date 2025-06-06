@@ -165,7 +165,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
             body.style.overflow = '';
         }
     });
-});*/
+});
 
 // Accordion
 
